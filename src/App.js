@@ -3,6 +3,7 @@ import Topbar from './components/Topbar';
 import Home from './pages/Home';
 import { Routes, Route} from 'react-router-dom';
 import UserList from './pages/UserList';
+import UserDetail from './pages/UserDetail';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/user/:userId" element={<UserDetail />} />
         </Routes>
       </div>
     </div>
