@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import UserList from './pages/UserList';
 import UserDetail from './pages/UserDetail';
 import NewUser from './pages/NewUser';
-import Products from './pages/Products';
+import ProductsList from './pages/ProductsList';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/user/:userId" element={<UserDetail />} />
           <Route path="/newUser" element={<NewUser />} />
           {/* Product Route */}
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<ProductsList />} />
         </Routes>
       </div>
     </div>
