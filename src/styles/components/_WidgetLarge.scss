@@ -1,0 +1,72 @@
+.WidgetLarge{
+    flex: 2;
+    box-shadow: $boxShadow;
+    -webkit-box-shadow:$boxShadow;
+    padding: 20px;
+    border-radius: 10px;
+
+    .widgetLargeTitle{
+        font-size: 22px;
+        font-weight: 600;
+        color: $color-1;
+
+    }
+
+    .widgetLargeTable{
+        width: 100%;
+        border-spacing: 20px;
+        .widgetLargeTr{
+            .widgetLargeTh{
+                text-align: left;
+            }
+
+            .widgetLargeUser{
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                .widgetLargeImage{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+            }
+            .widgetLargeName{
+
+            }
+            .widgetLargeDate{
+
+                font-weight: 300;
+            }
+            .widgetLargeAmount{
+                font-weight: 300;
+            }
+            .widgetLargeStatus{
+
+                .WidgetLargeButton{
+                border: none;
+                border-radius: 10px;
+                padding: 7px 10px;
+                
+
+            }
+            .Approuvé{
+                background-color: green;
+                border: 1px solid lime;
+                color: lime;
+            }
+            .En-Attente{
+                background-color: rgba(128, 107, 0, 0.859);
+                border: 1px solid rgb(255, 204, 0);
+                color: rgb(255, 204, 0);
+            }
+            .Decliné{
+                background-color: rgba(149, 9, 9, 0.734);
+                border: 1px solid red;
+                color: red;
+            }
+            }
+        }
+    }
+}

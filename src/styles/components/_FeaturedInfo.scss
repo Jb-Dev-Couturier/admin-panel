@@ -9,8 +9,9 @@
     padding: 30px;
     border-radius: 10px;
     cursor: pointer;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: $boxShadow;
+    box-shadow: $boxShadow;
+    border-radius: 10px;
 
     .featuredTitle{
         font-size: 20px;
