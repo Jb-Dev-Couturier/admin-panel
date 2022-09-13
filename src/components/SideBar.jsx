@@ -1,7 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import {LineStyle,QueryStats,TrendingUp,PermIdentity,Storefront,AttachMoney,BarChart,MailOutline,DynamicFeed,ChatBubbleOutline,WorkOutline,Report} from '@mui/icons-material';
-
+import {
+  LineStyle,
+  QueryStats,
+  TrendingUp,
+  PermIdentity,
+  Storefront,
+  AttachMoney,
+  BarChart,
+  MailOutline,
+  DynamicFeed,
+  ChatBubbleOutline,
+  WorkOutline,
+  Report,
+} from '@mui/icons-material';
 
 export default function SideBar() {
   return (
@@ -10,10 +23,12 @@ export default function SideBar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Accueil
-            </li>
+            <Link to={'/'}>
+              <li className="sidebarListItem active">
+                <LineStyle className="sidebarIcon" />
+                Accueil
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <QueryStats className="sidebarIcon" />
               Analyse
@@ -27,10 +42,12 @@ export default function SideBar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem ">
-              <PermIdentity className="sidebarIcon" />
-              Utilisateurs
-            </li>
+            <Link to={'/users'} className='sidebarLink'>
+              <li className="sidebarListItem ">
+                <PermIdentity className="sidebarIcon" />
+                Utilisateurs
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <Storefront className="sidebarIcon" />
               Produits
