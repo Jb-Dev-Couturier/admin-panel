@@ -1,69 +1,67 @@
-.WidgetSmall{
-    flex: 1;
-    box-shadow: $boxShadow;
-    -webkit-box-shadow:$boxShadow;
-    padding: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
+.WidgetSmall {
+  flex: 1;
+  box-shadow: $boxShadow;
+  -webkit-box-shadow: $boxShadow;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
 
-    .widgetSmallTitle{
-        font-size: 22px;
-        font-weight: 600;
+  .widgetSmallTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: $color-1;
+  }
+
+  .widgetSmallList {
+    margin: 0;
+    padding: 0;
+    .widgetSmallListItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+      .widgetSmallImage {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .widgetSmallUser {
+        display: flex;
+        flex-direction: column;
+        .widgetSmallUsername {
+          font-weight: 600;
+        }
+        .widgetSmallUserTitle {
+          font-weight: 400;
+          font-style: italic;
+        }
+      }
+
+      .widgetSmallButton {
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+        padding: 7px 10px;
+        background-color: transparent;
+        border: 1px solid $color-1;
         color: $color-1;
-    }
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
 
-    .widgetSmallList{
-        margin: 0;
-        padding: 0;
-        .widgetSmallListItem{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 20px 0;
-            .widgetSmallImage{
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-
-            .widgetSmallUser{
-                display: flex;
-                flex-direction: column;
-                .widgetSmallUsername{
-                    font-weight: 600;
-
-                }
-                .widgetSmallUserTitle{
-                    font-weight: 400;
-                    font-style: italic;
-                }
-            }
-
-            .widgetSmallButton{
-                display: flex;
-                align-items: center;
-                border: none;
-                border-radius: 10px;
-                padding: 7px 10px;
-                background-color: transparent;
-                border: 1px solid $color-1;
-                color: $color-1;
-                cursor: pointer;
-                transition: .3s all ease-in-out;
-                
-                &:hover{
-                    background-color: $color-1;
-                    transform: scale(1.1);
-                    color: $white;
-                }
-
-                .widgetSmallIcon{
-                    font-size: 16px !important;
-                    margin-right: 5px !important;
-                }
-            }
+        &:hover {
+          background-color: $color-1;
+          transform: scale(1.1);
+          color: $white;
         }
 
+        .widgetSmallIcon {
+          font-size: 16px !important;
+          margin-right: 5px !important;
+        }
+      }
     }
+  }
 }

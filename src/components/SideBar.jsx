@@ -42,16 +42,18 @@ export default function SideBar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Menu</h3>
           <ul className="sidebarList">
-            <Link to={'/users'} className='sidebarLink'>
+            <Link to={'/users'} className="sidebarLink">
               <li className="sidebarListItem ">
                 <PermIdentity className="sidebarIcon" />
                 Utilisateurs
               </li>
             </Link>
-            <li className="sidebarListItem">
-              <Storefront className="sidebarIcon" />
-              Produits
-            </li>
+            <Link to={'/products'} className="sidebarLink">
+              <li className="sidebarListItem">
+                <Storefront className="sidebarIcon" />
+                Produits
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
               Transactions

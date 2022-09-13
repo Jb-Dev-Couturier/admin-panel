@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   CalendarToday,
   LocationSearching,
@@ -6,7 +8,6 @@ import {
   PhoneAndroid,
   Publish,
 } from '@mui/icons-material';
-import React from 'react';
 import ProfilUser from '../assets/images/profilUserDefault.png';
 
 export default function UserDetails() {
@@ -14,7 +15,9 @@ export default function UserDetails() {
     <div className="UserDetail">
       <div className="userDetailTitleContainer">
         <h1 className="userDetailTitle">Détail Utilisateur</h1>
+        <Link to={'/newUser'}>
         <button className="userDetailAddButton">Crée</button>
+        </Link>
       </div>
       <div className="userDetailContainer">
         <div className="userDetailShow">
@@ -95,7 +98,7 @@ export default function UserDetails() {
               </div>
 
               <div className="userDetailUpdateItem">
-                <label htmlFor="">Travail à</label>
+                <label htmlFor="">Emploi</label>
                 <input
                   type="text"
                   placeholder="Secretaire"
@@ -115,7 +118,7 @@ export default function UserDetails() {
               <div className="userDetailUpdateItem">
                 <label htmlFor="">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   placeholder="JaneDoe@gmail.com"
                   className="userDetailInput"
                 />

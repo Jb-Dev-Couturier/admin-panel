@@ -127,13 +127,13 @@
           flex-direction: column;
           justify-content: space-between;
           .userDetailUpdateUpload {
-                display: flex;
-                align-items: center;
+            display: flex;
+            align-items: center;
 
-                .userDetailUpdateIcon{
-                    color: $color-1;
-                    cursor: pointer;
-                }
+            .userDetailUpdateIcon {
+              color: $color-1;
+              cursor: pointer;
+            }
 
             .userDetailUpdateImage {
               width: 150px;
