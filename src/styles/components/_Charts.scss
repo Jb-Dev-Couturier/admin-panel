@@ -1,0 +1,13 @@
+.Charts{
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+
+    .chartTitle{
+        margin-bottom: 20px;
+        color: $color-1;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+}

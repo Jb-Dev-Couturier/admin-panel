@@ -9,7 +9,7 @@ export default function Topbar() {
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <img src={Logo} alt="logo" className="Logo" />
+          <img src={Logo} alt="logo-pic" className="Logo" />
           <span>Admin-Panel</span>
         </div>
         <div className="topRight">
