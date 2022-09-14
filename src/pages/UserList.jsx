@@ -60,6 +60,7 @@ export default function UserList() {
 
   return (
     <div className="UserList">
+      <h1 className="productTitle">Utilisateur</h1>
       <DataGrid
         rows={data}
         columns={columns}

@@ -1,12 +1,17 @@
 .ProductsList{
     flex: 4;
+    
+
+    .productTitle{
+      color: $color-1;
+    }
 
       .productlistProduct {
     display: flex;
     align-items: center;
     .productListImage {
-      width: 32px;
-      height: 32px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       object-fit: cover;
       margin-right: 10px;

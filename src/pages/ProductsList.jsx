@@ -59,6 +59,7 @@ export default function ProductsList() {
     ];
   return (
     <div className="ProductsList">
+      <h1 className="productTitle">Produit</h1>
       <DataGrid
         rows={data}
         columns={columns}

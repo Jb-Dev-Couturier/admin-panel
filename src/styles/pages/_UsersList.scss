@@ -1,6 +1,10 @@
 .UserList {
   flex: 4;
 
+  .productTitle{
+    color: $color-1;
+  }
+
   .userlistUser {
     display: flex;
     align-items: center;
