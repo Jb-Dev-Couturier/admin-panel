@@ -24,7 +24,7 @@ export default function SideBar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to={'/'}>
-              <li className="sidebarListItem active">
+              <li className="sidebarListItem">
                 <LineStyle className="sidebarIcon" />
                 Accueil
               </li>

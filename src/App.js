@@ -8,6 +8,7 @@ import NewUser from './pages/NewUser';
 import ProductsList from './pages/ProductsList';
 import ProductDetail from './pages/ProductDetail';
 import NewProduct from './pages/NewProduct';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -16,15 +17,19 @@ function App() {
       <div className="containerApp">
         <SideBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* User Route */}
-          <Route path="/users" element={<UserList />} />
-          <Route path="/user/:userId" element={<UserDetail />} />
-          <Route path="/newUser" element={<NewUser />} />
-          {/* Product Route */}
-          <Route path="/products" element={<ProductsList />} />
-          <Route path="/product/:productId" element={<ProductDetail />} />
-          <Route path="/newProduct" element={<NewProduct />} />
+          <Route path="/">
+            <Route index element={<Home />} />
+
+            <Route path="login" element={<Login />} />
+            {/* User Route */}
+            <Route path="/users" element={<UserList />} />
+            <Route path="/user/:userId" element={<UserDetail />} />
+            <Route path="/newUser" element={<NewUser />} />
+            {/* Product Route */}
+            <Route path="/products" element={<ProductsList />} />
+            <Route path="/product/:productId" element={<ProductDetail />} />
+            <Route path="/newProduct" element={<NewProduct />} />
+          </Route>
         </Routes>
       </div>
     </div>
